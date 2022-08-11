@@ -18,7 +18,7 @@ const rest = new REST({ version: "9" }).setToken(GetToken());
 rest
   // how I can get the id of my server? the answer in this github discussion https://github.com/abdfnx/botway/discussions/4#discussioncomment-2653737
   .put(
-    Routes.applicationGuildCommands(GetAppId(), GetGuildId("YOUR_SERVER_NAME")),
+    Routes.applicationGuildCommands(GetAppId(), GetGuildId("botway")),
     {
       body: commands,
     }
