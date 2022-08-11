@@ -1,0 +1,13 @@
+author: abdfnx
+bot:
+    lang: nodejs
+    name: botway-test-bot
+    package_manager: pnpm
+    start_cmd: node src/main.js
+    type: discord
+docker:
+    cmds:
+        build: docker build -t abdcodedoc/botway-test-bot .
+        run: docker run -it abdcodedoc/botway-test-bot
+    enable_buildkit: true
+    image: abdcodedoc/botway-test-bot
